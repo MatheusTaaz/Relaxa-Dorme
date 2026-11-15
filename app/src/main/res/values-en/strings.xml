@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Identity and languages -->
+    <string name="app_name">Relax &amp; Sleep</string>
+    <string name="app_creator">mTaaz</string>
+    <string name="app_created_by">Created by mTaaz.</string>
+    <string name="language_portuguese">Portuguese</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="language_selector_cd">Select language: %1$s</string>
+    <string name="language_selected_cd">%1$s (selected)</string>
+
+    <!-- Navigation and common actions -->
+    <string name="action_back">Back</string>
+    <string name="action_close">Close</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_save">Save</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_refreshing">Refreshing</string>
+    <string name="action_retry">Try again</string>
+    <string name="action_see_more">See more</string>
+    <string name="action_see_less">See less</string>
+    <string name="action_play">Play</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+
+    <!-- Home -->
+    <string name="home_favorites_cd">Favorites</string>
+    <string name="home_about_cd">About the app</string>
+    <string name="home_continue_listening">Continue listening</string>
+    <string name="home_continue_mixer_subtitle">Ambient sound mixer</string>
+    <string name="home_dest_albums">Albums</string>
+    <string name="home_dest_music">Music</string>
+    <string name="home_dest_sounds">Sounds</string>
+    <string name="home_dest_mixer">Mixer</string>
+    <string name="home_albums_and_downloads">Albums &amp; downloads</string>
+    <string name="home_sounds_subtitle">Individual soundscapes</string>
+    <string name="home_mixer_combine_up_to">Combine up to %1$d sounds</string>
+    <plurals name="home_albums_available">
+        <item quantity="one">%d album available</item>
+        <item quantity="other">%d albums available</item>
+    </plurals>
+    <plurals name="home_mixer_active_sounds">
+        <item quantity="one">%d active sound</item>
+        <item quantity="other">%d active sounds</item>
+    </plurals>
+
+    <!-- Dynamic Home greetings -->
+    <string name="greeting_morning_title">Good morning!</string>
+    <string name="greeting_morning_sub_1">May your day begin gently.</string>
+    <string name="greeting_morning_sub_2">Take a deep breath and enjoy the morning.</string>
+    <string name="greeting_morning_sub_3">One calm step at a time.</string>
+    <string name="greeting_morning_sub_4">Wishing you a serene start to your day.</string>
+
+    <string name="greeting_afternoon_title">Good afternoon!</string>
+    <string name="greeting_afternoon_sub_1">How about a quiet pause to breathe?</string>
+    <string name="greeting_afternoon_sub_2">Take a few minutes to slow down.</string>
+    <string name="greeting_afternoon_sub_3">A calm moment in the middle of the day.</string>
+    <string name="greeting_afternoon_sub_4">Keep an easy pace this afternoon.</string>
+
+    <string name="greeting_night_title">Good evening!</string>
+    <string name="greeting_night_sub_1">Time to slow down.</string>
+    <string name="greeting_night_sub_2">Get ready for a peaceful night.</string>
+    <string name="greeting_night_sub_3">Breathe deeply and rest calmly.</string>
+    <string name="greeting_night_sub_4">Your quiet space for better sleep.</string>
+
+    <!-- Ghosty Buddy -->
+    <string name="ghosty_msg_falling_asleep">Shhh… time to sleep.</string>
+    <string name="ghosty_msg_timer_active">Turning off in %1$s</string>
+    <string name="ghosty_msg_waking_up">Rest well.</string>
+    <string name="ghosty_msg_browsing">What shall we listen to?</string>
+    <string name="ghosty_msg_welcome">Glad to have you here.</string>
+    <string name="ghosty_cd_falling_asleep">Ghosty falling asleep during fade-out</string>
+    <string name="ghosty_cd_timer_active">Ghosty cozy in a blanket waiting for the timer</string>
+    <string name="ghosty_cd_sleeping">Ghosty sleeping peacefully</string>
+    <string name="ghosty_cd_waking_up">Ghosty waking up with a warm expression</string>
+    <string name="ghosty_cd_playing_music">Ghosty listening to music with headphones</string>
+    <string name="ghosty_cd_playing_mixer">Ghosty relaxing with ambient sounds</string>
+    <string name="ghosty_cd_paused">Ghosty resting quietly</string>
+    <string name="ghosty_cd_browsing">Ghosty curiously following your choice</string>
+    <string name="ghosty_cd_welcome">Ghosty smiling in welcome</string>
+    <string name="ghosty_cd_touch_happy">Ghosty smiling happily at your touch</string>
+
+    <!-- About + Local stats -->
+    <string name="about_editorial_body">Relaxa e Dorme was created to offer a simple space to pause.\n\nMusic, ambient sounds, and quiet moments to accompany your rest, your focus, or the end of a long day.\n\nNo rush. No distractions. Just the right sound for every moment.\n\nA creation by mTaaz.</string>
+    <string name="about_stats_title">Your Relaxation Time</string>
+    <string name="about_stats_total">Total time</string>
+    <string name="about_stats_music">Music time</string>
+    <string name="about_stats_ambient">Ambient sound time</string>
+    <string name="about_stats_local_note">Your listening data is stored only on this device.</string>
+    <string name="about_app_section_title">Application</string>
+    <string name="about_label_name">Name</string>
+    <string name="about_label_creator">Creator</string>
+    <string name="about_label_version">Version</string>
+    <string name="about_value_version">Version %1$s</string>
+    <string name="about_label_catalog">Current catalog</string>
+    <string name="about_privacy_title">Privacy &amp; transparency</string>
+    <string name="about_privacy_body">Your statistics belong exclusively to this device, are never sent to external servers, and are never synced across devices. The app uses the internet only to fetch the catalog and stream content hosted on the server, keeping downloaded tracks available even offline.</string>
+
+    <!-- Duration formatting -->
+    <string name="stats_duration_minutes">%1$s min</string>
+    <string name="stats_duration_hours_minutes">%1$sh %2$dmin</string>
+    <string name="duration_hours_and_minutes">%1$s and %2$s</string>
+    <plurals name="duration_seconds">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="album_count">
+        <item quantity="one">%d album</item>
+        <item quantity="other">%d albums</item>
+    </plurals>
+    <plurals name="track_count">
+        <item quantity="one">%d track</item>
+        <item quantity="other">%d tracks</item>
+    </plurals>
+    <plurals name="sound_count">
+        <item quantity="one">%d sound</item>
+        <item quantity="other">%d sounds</item>
+    </plurals>
+
+    <!-- Music & Downloads -->
+    <string name="music_screen_title">Music</string>
+    <string name="music_tab_albums">Albums</string>
+    <string name="music_tab_downloads">Downloads (%1$d)</string>
+    <string name="music_play_shuffled">Play shuffled</string>
+    <string name="music_empty_catalog_shuffle">No music is currently available in the catalog.</string>
+    <string name="music_refresh_catalog_cd">Refresh catalog</string>
+    <string name="music_catalog_loading">Loading catalog…</string>
+    <string name="music_catalog_empty_title">No albums available</string>
+    <string name="music_catalog_empty_default">Connect to the internet to load albums from the catalog.</string>
+    <string name="music_downloads_checking">Checking downloads on this device…</string>
+    <string name="music_downloads_empty_title">No downloaded music</string>
+    <string name="music_downloads_empty_subtitle">Open any album and tap Download to listen even without internet.</string>
+    <string name="music_downloads_error_title">Error checking downloads</string>
+    <string name="music_downloads_count_header">%1$s on device</string>
+    <string name="music_album_play_all">Play album</string>
+    <string name="music_album_download">Download album</string>
+    <string name="music_album_downloading">Downloading…</string>
+    <string name="music_album_offline_ready">Available offline</string>
+    <string name="music_album_remove_downloads">Remove downloads</string>
+    <string name="music_album_tracks_offline">%1$d of %2$d downloaded</string>
+    <string name="music_track_offline_ready">Available offline</string>
+    <string name="music_track_download_cd">Download track</string>
+    <string name="music_track_cancel_download_cd">Cancel download</string>
+    <string name="music_track_delete_download_cd">Remove download</string>
+    <string name="music_delete_track_title">Remove download?</string>
+    <string name="music_delete_track_body">Do you want to remove \"%1$s\" from internal storage? Your favorites and history will be preserved.</string>
+    <string name="music_delete_album_title">Remove album downloads?</string>
+    <string name="music_delete_album_body">Do you want to remove %1$d downloaded tracks from \"%2$s\" from internal storage? Your favorites and history will be preserved.</string>
+    <string name="music_delete_album_confirm">Remove downloads</string>
+    <string name="music_favorite_add_cd">Add to favorites</string>
+    <string name="music_favorite_remove_cd">Remove from favorites</string>
+    <string name="music_tab_downloads_plain">Downloads</string>
+    <string name="music_downloads_error_subtitle">Check internal storage and try again.</string>
+    <string name="music_downloads_explore_albums">Explore albums</string>
+    <plurals name="music_downloads_count_plurals">
+        <item quantity="one">%d downloaded track</item>
+        <item quantity="other">%d downloaded tracks</item>
+    </plurals>
+    <string name="music_delete_track_body_streaming">Do you want to delete the downloaded file for \"%1$s\" from this device? The track will remain available in the library for streaming.</string>
+    <plurals name="music_delete_album_body_plurals">
+        <item quantity="one">Do you want to remove the downloaded track from \"%2$s\" from internal storage? Your favorites and history will be preserved.</item>
+        <item quantity="other">Do you want to remove the %1$d downloaded tracks from \"%2$s\" from internal storage? Your favorites and history will be preserved.</item>
+    </plurals>
+    <string name="music_catalog_loading_albums">Loading album library…</string>
+    <string name="music_catalog_empty_sync">No albums loaded right now. Connect to the internet to sync the catalog.</string>
+    <string name="music_refresh_catalog_btn">Refresh catalog</string>
+    <string name="music_album_offline_badge">• %1$d/%2$d offline</string>
+    <string name="music_album_empty_tracks">No tracks are currently available in this album.</string>
+    <string name="music_album_downloading_progress">Downloading album (%1$d of %2$d completed)</string>
+    <string name="music_album_all_downloaded">All %1$d tracks downloaded</string>
+    <string name="music_album_partial_downloaded">%1$d of %2$d tracks downloaded</string>
+    <string name="music_album_available_streaming">Available for streaming and download</string>
+    <plurals name="music_album_partial_resume">
+        <item quantity="one">%d partial download can be resumed</item>
+        <item quantity="other">%d partial downloads can be resumed</item>
+    </plurals>
+    <string name="music_album_download_remaining">Download remaining</string>
+    <string name="music_track_downloading_pct">Downloading • %1$d%%</string>
+    <string name="music_track_starting_download">Starting download…</string>
+    <string name="music_track_offline_size">Offline • %1$s</string>
+    <string name="music_track_offline">Offline</string>
+    <string name="music_track_partial_resume">Partial download (%1$d%%) • Tap to resume</string>
+    <string name="music_track_download_failed">Download failed • Tap to retry</string>
+    <string name="music_track_playing_cd">Playing</string>
+    <string name="music_track_paused_cd">Paused</string>
+    <string name="music_track_delete_specific_cd">Delete download for %1$s</string>
+    <string name="music_track_downloaded_device_cd">Downloaded on device</string>
+    <string name="music_track_download_offline_cd">Download to listen offline</string>
+
+    <!-- Sounds -->
+    <string name="sounds_screen_title">Sounds</string>
+    <string name="sounds_all_categories">All</string>
+    <string name="sounds_empty_title">No sounds in this category</string>
+    <string name="sounds_active_in_mixer">In mixer</string>
+    <string name="sounds_volume_label">Volume</string>
+    <string name="sounds_adjust_volume_cd">Adjust volume for %1$s</string>
+
+    <!-- Mixer -->
+    <string name="mixer_screen_title">Mixer</string>
+    <string name="mixer_active_layers_title">Active layers</string>
+    <string name="mixer_master_volume">Master volume</string>
+    <string name="mixer_pause_all">Pause all</string>
+    <string name="mixer_resume_all">Resume all</string>
+    <string name="mixer_clear_all">Clear mixer</string>
+    <string name="mixer_empty_title">No sounds selected</string>
+    <string name="mixer_empty_subtitle">Choose sounds to listen to in the Sounds tab to adjust their volumes and intervals here.</string>
+    <string name="mixer_open_sounds">Choose sounds</string>
+    <string name="mixer_scenes_title">Saved scenes</string>
+    <string name="mixer_save_scene">Save scene</string>
+    <string name="mixer_save_combination">Save combination</string>
+    <string name="mixer_scene_name_label">Name</string>
+    <string name="mixer_scene_name_placeholder">e.g. Rain &amp; Thunder</string>
+    <string name="mixer_scene_default_name">Soundscape (%1$d)</string>
+    <string name="mixer_scene_apply_cd">Apply scene</string>
+    <string name="mixer_scene_delete_cd">Remove scene %1$s</string>
+    <string name="mixer_layer_settings_cd">Settings for %1$s</string>
+    <string name="mixer_playback_type">Playback type</string>
+    <string name="mixer_continuous_ambient">Continuous ambient</string>
+    <string name="mixer_interval_frequency">Interval frequency</string>
+    <string name="mixer_continuous_playback">Continuous playback</string>
+    <string name="mixer_spaced_effect">Spaced effect</string>
+    <string name="mixer_pause_sound">Pause sound</string>
+    <string name="mixer_resume_sound">Resume sound</string>
+    <string name="mixer_remove_from_mixer">Remove from mixer</string>
+    <string name="mixer_min_interval">Minimum interval</string>
+    <string name="mixer_max_interval">Maximum interval</string>
+    <string name="mixer_remove_layer_cd">Remove layer</string>
+    <string name="mixer_interval_label">Interval</string>
+
+    <!-- Favorites -->
+    <string name="favorites_screen_title">Favorites</string>
+    <string name="favorites_empty_title">No favorite tracks yet</string>
+    <string name="favorites_empty_subtitle">Tap the heart on any track or in the player to save it here.</string>
+    <string name="favorites_explore_music">Explore albums</string>
+
+    <!-- Player -->
+    <string name="player_close_cd">Close player</string>
+    <string name="player_playing_now">Now playing</string>
+    <string name="player_shuffle_on">Shuffle enabled</string>
+    <string name="player_sequential">Sequential playback</string>
+    <string name="player_previous_cd">Previous track</string>
+    <string name="player_next_cd">Next track</string>
+    <string name="player_shuffle_cd">Toggle shuffle</string>
+    <string name="player_repeat_cd">Cycle repeat mode</string>
+    <string name="player_timer_cd">Sleep timer</string>
+    <string name="player_timer_off">Timer</string>
+    <string name="player_timer_fading">Fading out…</string>
+    <string name="player_volume_label">Volume</string>
+    <string name="player_mute_cd">Mute or unmute volume</string>
+    <string name="player_buffering">Loading audio…</string>
+    <string name="player_error_offline">Track \"%1$s\" requires download or server connection.</string>
+    <string name="player_error_no_connection">No connection to play \"%1$s\". Connect to the internet or download the track to listen offline.</string>
+    <string name="player_error_generic">Could not play \"%1$s\". Tap Play to try again.</string>
+    <string name="player_error_loading_audio">Error loading audio: %1$s</string>
+    <string name="notification_plus_ambient">%1$s • + Ambient sounds</string>
+
+    <!-- Notifications / MediaSession -->
+    <string name="notification_mixer_title">Ambient sound mixer</string>
+    <string name="notification_mixer_artist">Relax &amp; Sleep</string>
+    <string name="notification_action_play">Play</string>
+    <string name="notification_action_pause">Pause</string>
+    <string name="notification_action_next">Next</string>
+    <string name="notification_action_previous">Previous</string>
+</resources>

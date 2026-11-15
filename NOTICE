@@ -1,0 +1,42 @@
+Relaxa e Dorme — Avisos de Licenciamento e Atribuição (NOTICE)
+
+1. Código-fonte do projeto
+--------------------------
+Copyright (c) mTaaz
+
+O código-fonte do aplicativo Relaxa e Dorme incluído neste repositório público
+é distribuído sob a licença GNU General Public License v3.0 apenas
+("GPL-3.0-only"). O texto integral da licença encontra-se no arquivo LICENSE.
+
+2. Separação entre código-fonte e assets proprietários
+-------------------------------------------------------
+A licença GPL-3.0-only aplica-se exclusivamente ao código-fonte e aos recursos
+de interface vetoriais/XML contidos neste repositório público.
+
+Este repositório NÃO inclui nem licencia ilustrações proprietárias da
+mascote Ghosty, sons ambientes, faixas musicais, capas de álbuns ou catálogos
+de produção. Consulte LICENSE-ASSETS.md e AUDIO_LICENSES.md para detalhes de
+procedência, licenciamento e pendências aplicáveis aos assets.
+
+3. Dependências de terceiros
+----------------------------
+Este projeto utiliza bibliotecas externas declaradas em `gradle/libs.versions.toml`
+e `app/build.gradle.kts`, cujas licenças e avisos originais devem ser
+preservados em qualquer redistribuição:
+
+- Kotlin Standard Library e Kotlinx Serialization (JetBrains / Kotlin Foundation)
+  Licença: Apache License 2.0 (preservar avisos originais).
+- AndroidX (Core KTX, Activity Compose, Lifecycle, Navigation Compose,
+  DataStore Preferences, Jetpack Compose, Material 3, AndroidX Test, Espresso)
+  Licença: Apache License 2.0 (preservar avisos originais).
+- AndroidX Media3 (ExoPlayer e MediaSession)
+  Licença: Apache License 2.0 (preservar avisos originais).
+- JUnit 4
+  Licença: Eclipse Public License 1.0 (EPL-1.0) (preservar avisos originais).
+- Ícones vetoriais Material Symbols / Material Icons (`app/src/main/res/drawable/ic_*.xml`)
+  Licença: Apache License 2.0 (quando originados do conjunto oficial Material Symbols/Icons).
+
+4. Ferramentas de apoio
+-----------------------
+Partes do desenvolvimento, revisão e documentação contaram com o apoio de
+ferramentas de inteligência artificial sob supervisão do autor do projeto.

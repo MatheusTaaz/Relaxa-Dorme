@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Identidad e idiomas -->
+    <string name="app_name">Relaja y Duerme</string>
+    <string name="app_creator">mTaaz</string>
+    <string name="app_created_by">Una creación de mTaaz.</string>
+    <string name="language_portuguese">Portugués</string>
+    <string name="language_english">Inglés</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_selector_cd">Seleccionar idioma: %1$s</string>
+    <string name="language_selected_cd">%1$s (seleccionado)</string>
+
+    <!-- Navegación y acciones comunes -->
+    <string name="action_back">Volver</string>
+    <string name="action_close">Cerrar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_remove">Eliminar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_refresh">Actualizar</string>
+    <string name="action_refreshing">Actualizando</string>
+    <string name="action_retry">Intentar de nuevo</string>
+    <string name="action_see_more">Ver más</string>
+    <string name="action_see_less">Ver menos</string>
+    <string name="action_play">Reproducir</string>
+    <string name="action_pause">Pausar</string>
+    <string name="action_resume">Reanudar</string>
+
+    <!-- Inicio -->
+    <string name="home_favorites_cd">Favoritos</string>
+    <string name="home_about_cd">Acerca de la aplicación</string>
+    <string name="home_continue_listening">Seguir escuchando</string>
+    <string name="home_continue_mixer_subtitle">Mezclador de sonidos ambientales</string>
+    <string name="home_dest_albums">Álbumes</string>
+    <string name="home_dest_music">Música</string>
+    <string name="home_dest_sounds">Sonidos</string>
+    <string name="home_dest_mixer">Mixer</string>
+    <string name="home_albums_and_downloads">Álbumes y descargas</string>
+    <string name="home_sounds_subtitle">Ambientaciones individuales</string>
+    <string name="home_mixer_combine_up_to">Combina hasta %1$d sonidos</string>
+    <plurals name="home_albums_available">
+        <item quantity="one">%d álbum disponible</item>
+        <item quantity="other">%d álbumes disponibles</item>
+    </plurals>
+    <plurals name="home_mixer_active_sounds">
+        <item quantity="one">%d sonido activo</item>
+        <item quantity="other">%d sonidos activos</item>
+    </plurals>
+
+    <!-- Saludos dinámicos del inicio -->
+    <string name="greeting_morning_title">¡Buenos días!</string>
+    <string name="greeting_morning_sub_1">Que tu día comience con ligereza.</string>
+    <string name="greeting_morning_sub_2">Respira profundo y disfruta la mañana.</string>
+    <string name="greeting_morning_sub_3">Un paso tranquilo a la vez.</string>
+    <string name="greeting_morning_sub_4">Te deseamos un comienzo de día sereno.</string>
+
+    <string name="greeting_afternoon_title">¡Buenas tardes!</string>
+    <string name="greeting_afternoon_sub_1">¿Qué tal una pausa para respirar?</string>
+    <string name="greeting_afternoon_sub_2">Reserva unos minutos para bajar el ritmo.</string>
+    <string name="greeting_afternoon_sub_3">Un momento de calma en medio del día.</string>
+    <string name="greeting_afternoon_sub_4">Mantén un ritmo suave esta tarde.</string>
+
+    <string name="greeting_night_title">¡Buenas noches!</string>
+    <string name="greeting_night_sub_1">Hora de bajar el ritmo.</string>
+    <string name="greeting_night_sub_2">Prepárate para una noche tranquila.</string>
+    <string name="greeting_night_sub_3">Respira profundo y descansa con calma.</string>
+    <string name="greeting_night_sub_4">Tu espacio tranquilo para dormir mejor.</string>
+
+    <!-- Ghosty Buddy -->
+    <string name="ghosty_msg_falling_asleep">Shhh… hora de dormir.</string>
+    <string name="ghosty_msg_timer_active">Apagando en %1$s</string>
+    <string name="ghosty_msg_waking_up">Que descanses bien.</string>
+    <string name="ghosty_msg_browsing">¿Qué escucharemos hoy?</string>
+    <string name="ghosty_msg_welcome">Qué alegría tenerte aquí.</string>
+    <string name="ghosty_cd_falling_asleep">Ghosty quedándose dormida durante el desvanecimiento</string>
+    <string name="ghosty_cd_timer_active">Ghosty abrigada con una manta esperando el temporizador</string>
+    <string name="ghosty_cd_sleeping">Ghosty durmiendo tranquilamente</string>
+    <string name="ghosty_cd_waking_up">Ghosty despertando con expresión acogedora</string>
+    <string name="ghosty_cd_playing_music">Ghosty escuchando música con auriculares</string>
+    <string name="ghosty_cd_playing_mixer">Ghosty relajándose con sonidos ambientales</string>
+    <string name="ghosty_cd_paused">Ghosty tranquila en reposo</string>
+    <string name="ghosty_cd_browsing">Ghosty curiosa acompañando tu elección</string>
+    <string name="ghosty_cd_welcome">Ghosty sonriendo en bienvenida</string>
+    <string name="ghosty_cd_touch_happy">Ghosty sonriendo feliz con tu toque</string>
+
+    <!-- Acerca de + Estadísticas locales -->
+    <string name="about_editorial_body">Relaja y Duerme nació para crear un espacio sencillo para hacer una pausa.\n\nMúsica, sonidos ambientales y pequeños momentos de silencio para acompañar tu descanso, tu concentración o el final de un día largo.\n\nSin prisa. Sin distracciones. Solo el sonido adecuado para cada momento.\n\nUna creación de mTaaz.</string>
+    <string name="about_stats_title">Tu tiempo de tranquilidad</string>
+    <string name="about_stats_total">Tiempo total</string>
+    <string name="about_stats_music">Tiempo con música</string>
+    <string name="about_stats_ambient">Tiempo con sonidos ambientales</string>
+    <string name="about_stats_local_note">Tus datos de escucha se guardan únicamente en este dispositivo.</string>
+    <string name="about_app_section_title">Aplicación</string>
+    <string name="about_label_name">Nombre</string>
+    <string name="about_label_creator">Creador</string>
+    <string name="about_label_version">Versión</string>
+    <string name="about_value_version">Versión %1$s</string>
+    <string name="about_label_catalog">Catálogo actual</string>
+    <string name="about_privacy_title">Privacidad y transparencia</string>
+    <string name="about_privacy_body">Tus estadísticas pertenecen exclusivamente a este dispositivo, no se envían a servidores externos ni se sincronizan entre aparatos. La aplicación utiliza internet solo para consultar el catálogo y reproducir contenido alojado en el servidor, manteniendo las descargas guardadas disponibles incluso sin conexión.</string>
+
+    <!-- Formato de duraciones -->
+    <string name="stats_duration_minutes">%1$s min</string>
+    <string name="stats_duration_hours_minutes">%1$sh %2$dmin</string>
+    <string name="duration_hours_and_minutes">%1$s y %2$s</string>
+    <plurals name="duration_seconds">
+        <item quantity="one">%d segundo</item>
+        <item quantity="other">%d segundos</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minuto</item>
+        <item quantity="other">%d minutos</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d hora</item>
+        <item quantity="other">%d horas</item>
+    </plurals>
+    <plurals name="album_count">
+        <item quantity="one">%d álbum</item>
+        <item quantity="other">%d álbumes</item>
+    </plurals>
+    <plurals name="track_count">
+        <item quantity="one">%d pista</item>
+        <item quantity="other">%d pistas</item>
+    </plurals>
+    <plurals name="sound_count">
+        <item quantity="one">%d sonido</item>
+        <item quantity="other">%d sonidos</item>
+    </plurals>
+
+    <!-- Música y Descargas -->
+    <string name="music_screen_title">Música</string>
+    <string name="music_tab_albums">Álbumes</string>
+    <string name="music_tab_downloads">Descargas (%1$d)</string>
+    <string name="music_play_shuffled">Reproducir aleatorio</string>
+    <string name="music_empty_catalog_shuffle">No hay música disponible en el catálogo en este momento.</string>
+    <string name="music_refresh_catalog_cd">Actualizar catálogo</string>
+    <string name="music_catalog_loading">Cargando catálogo…</string>
+    <string name="music_catalog_empty_title">No hay álbumes disponibles</string>
+    <string name="music_catalog_empty_default">Conéctate a internet para cargar los álbumes del catálogo.</string>
+    <string name="music_downloads_checking">Comprobando descargas en el dispositivo…</string>
+    <string name="music_downloads_empty_title">No hay música descargada</string>
+    <string name="music_downloads_empty_subtitle">Abre cualquier álbum y toca Descargar para escuchar sin internet.</string>
+    <string name="music_downloads_error_title">Error al comprobar descargas</string>
+    <string name="music_downloads_count_header">%1$s en el dispositivo</string>
+    <string name="music_album_play_all">Reproducir álbum</string>
+    <string name="music_album_download">Descargar álbum</string>
+    <string name="music_album_downloading">Descargando…</string>
+    <string name="music_album_offline_ready">Disponible sin conexión</string>
+    <string name="music_album_remove_downloads">Eliminar descargas</string>
+    <string name="music_album_tracks_offline">%1$d de %2$d descargadas</string>
+    <string name="music_track_offline_ready">Disponible sin conexión</string>
+    <string name="music_track_download_cd">Descargar pista</string>
+    <string name="music_track_cancel_download_cd">Cancelar descarga</string>
+    <string name="music_track_delete_download_cd">Eliminar descarga</string>
+    <string name="music_delete_track_title">¿Eliminar descarga?</string>
+    <string name="music_delete_track_body">¿Deseas eliminar \"%1$s\" del almacenamiento interno? Tus favoritos e historial se conservarán.</string>
+    <string name="music_delete_album_title">¿Eliminar descargas del álbum?</string>
+    <string name="music_delete_album_body">¿Deseas eliminar %1$d pistas descargadas del álbum \"%2$s\" del almacenamiento interno? Tus favoritos e historial se conservarán.</string>
+    <string name="music_delete_album_confirm">Eliminar descargas</string>
+    <string name="music_favorite_add_cd">Añadir a favoritos</string>
+    <string name="music_favorite_remove_cd">Quitar de favoritos</string>
+    <string name="music_tab_downloads_plain">Descargas</string>
+    <string name="music_downloads_error_subtitle">Comprueba el almacenamiento interno e inténtalo de nuevo.</string>
+    <string name="music_downloads_explore_albums">Explorar álbumes</string>
+    <plurals name="music_downloads_count_plurals">
+        <item quantity="one">%d pista descargada</item>
+        <item quantity="other">%d pistas descargadas</item>
+    </plurals>
+    <string name="music_delete_track_body_streaming">¿Deseas eliminar el archivo descargado de \"%1$s\" del dispositivo? La pista seguirá disponible en la biblioteca para reproducción por streaming.</string>
+    <plurals name="music_delete_album_body_plurals">
+        <item quantity="one">¿Deseas eliminar la pista descargada del álbum \"%2$s\" del almacenamiento interno? Tus favoritos e historial se conservarán.</item>
+        <item quantity="other">¿Deseas eliminar las %1$d pistas descargadas del álbum \"%2$s\" del almacenamiento interno? Tus favoritos e historial se conservarán.</item>
+    </plurals>
+    <string name="music_catalog_loading_albums">Cargando biblioteca de álbumes…</string>
+    <string name="music_catalog_empty_sync">No hay álbumes cargados en este momento. Conéctate a internet para sincronizar el catálogo.</string>
+    <string name="music_refresh_catalog_btn">Actualizar catálogo</string>
+    <string name="music_album_offline_badge">• %1$d/%2$d sin conexión</string>
+    <string name="music_album_empty_tracks">No hay pistas disponibles en este álbum en este momento.</string>
+    <string name="music_album_downloading_progress">Descargando álbum (%1$d de %2$d completadas)</string>
+    <string name="music_album_all_downloaded">Todas las %1$d pistas descargadas</string>
+    <string name="music_album_partial_downloaded">%1$d de %2$d pistas descargadas</string>
+    <string name="music_album_available_streaming">Disponible para streaming y descarga</string>
+    <plurals name="music_album_partial_resume">
+        <item quantity="one">%d descarga parcial se puede reanudar</item>
+        <item quantity="other">%d descargas parciales se pueden reanudar</item>
+    </plurals>
+    <string name="music_album_download_remaining">Descargar restantes</string>
+    <string name="music_track_downloading_pct">Descargando • %1$d%%</string>
+    <string name="music_track_starting_download">Iniciando descarga…</string>
+    <string name="music_track_offline_size">Sin conexión • %1$s</string>
+    <string name="music_track_offline">Sin conexión</string>
+    <string name="music_track_partial_resume">Descarga parcial (%1$d%%) • Toca para reanudar</string>
+    <string name="music_track_download_failed">Error en la descarga • Toca para reintentar</string>
+    <string name="music_track_playing_cd">Reproduciendo</string>
+    <string name="music_track_paused_cd">En pausa</string>
+    <string name="music_track_delete_specific_cd">Eliminar descarga de %1$s</string>
+    <string name="music_track_downloaded_device_cd">Descargada en el dispositivo</string>
+    <string name="music_track_download_offline_cd">Descargar para escuchar sin conexión</string>
+
+    <!-- Sonidos -->
+    <string name="sounds_screen_title">Sonidos</string>
+    <string name="sounds_all_categories">Todos</string>
+    <string name="sounds_empty_title">No hay sonidos en esta categoría</string>
+    <string name="sounds_active_in_mixer">En el mixer</string>
+    <string name="sounds_volume_label">Volumen</string>
+    <string name="sounds_adjust_volume_cd">Ajustar volumen de %1$s</string>
+
+    <!-- Mixer -->
+    <string name="mixer_screen_title">Mixer</string>
+    <string name="mixer_active_layers_title">Capas activas</string>
+    <string name="mixer_master_volume">Volumen general</string>
+    <string name="mixer_pause_all">Pausar todos</string>
+    <string name="mixer_resume_all">Reanudar todos</string>
+    <string name="mixer_clear_all">Limpiar mixer</string>
+    <string name="mixer_empty_title">Ningún sonido seleccionado</string>
+    <string name="mixer_empty_subtitle">Elige los sonidos que deseas escuchar en la pestaña Sonidos para ajustar sus volúmenes e intervalos aquí.</string>
+    <string name="mixer_open_sounds">Elegir sonidos</string>
+    <string name="mixer_scenes_title">Escenas guardadas</string>
+    <string name="mixer_save_scene">Guardar escena</string>
+    <string name="mixer_save_combination">Guardar combinación</string>
+    <string name="mixer_scene_name_label">Nombre</string>
+    <string name="mixer_scene_name_placeholder">Ej: Lluvia y Truenos</string>
+    <string name="mixer_scene_default_name">Ambiente (%1$d)</string>
+    <string name="mixer_scene_apply_cd">Aplicar escena</string>
+    <string name="mixer_scene_delete_cd">Eliminar escena %1$s</string>
+    <string name="mixer_layer_settings_cd">Ajustes de %1$s</string>
+    <string name="mixer_playback_type">Tipo de reproducción</string>
+    <string name="mixer_continuous_ambient">Ambiente continuo</string>
+    <string name="mixer_interval_frequency">Frecuencia de intervalo</string>
+    <string name="mixer_continuous_playback">Reproducción continua</string>
+    <string name="mixer_spaced_effect">Efecto espaciado</string>
+    <string name="mixer_pause_sound">Pausar sonido</string>
+    <string name="mixer_resume_sound">Reanudar sonido</string>
+    <string name="mixer_remove_from_mixer">Quitar del mixer</string>
+    <string name="mixer_min_interval">Intervalo mínimo</string>
+    <string name="mixer_max_interval">Intervalo máximo</string>
+    <string name="mixer_remove_layer_cd">Quitar capa</string>
+    <string name="mixer_interval_label">Intervalo</string>
+
+    <!-- Favoritos -->
+    <string name="favorites_screen_title">Favoritos</string>
+    <string name="favorites_empty_title">Aún no tienes pistas favoritas</string>
+    <string name="favorites_empty_subtitle">Toca el corazón en cualquier pista o en el reproductor para guardarla aquí.</string>
+    <string name="favorites_explore_music">Explorar álbumes</string>
+
+    <!-- Reproductor -->
+    <string name="player_close_cd">Cerrar reproductor</string>
+    <string name="player_playing_now">Reproduciendo ahora</string>
+    <string name="player_shuffle_on">Modo aleatorio activado</string>
+    <string name="player_sequential">Reproducción secuencial</string>
+    <string name="player_previous_cd">Pista anterior</string>
+    <string name="player_next_cd">Siguiente pista</string>
+    <string name="player_shuffle_cd">Alternar aleatorio</string>
+    <string name="player_repeat_cd">Cambiar repetición</string>
+    <string name="player_timer_cd">Temporizador de sueño</string>
+    <string name="player_timer_off">Temporizador</string>
+    <string name="player_timer_fading">Finalizando…</string>
+    <string name="player_volume_label">Volumen</string>
+    <string name="player_mute_cd">Silenciar o restaurar volumen</string>
+    <string name="player_buffering">Cargando audio…</string>
+    <string name="player_error_offline">La pista \"%1$s\" requiere descarga o conexión con el servidor.</string>
+    <string name="player_error_no_connection">Sin conexión para reproducir \"%1$s\". Conéctate a internet o descarga la pista para escuchar sin conexión.</string>
+    <string name="player_error_generic">No se pudo reproducir \"%1$s\". Toca Reproducir para intentarlo de nuevo.</string>
+    <string name="player_error_loading_audio">Error al cargar el audio: %1$s</string>
+    <string name="notification_plus_ambient">%1$s • + Sonidos ambientales</string>
+
+    <!-- Notificaciones / MediaSession -->
+    <string name="notification_mixer_title">Mezclador de sonidos ambientales</string>
+    <string name="notification_mixer_artist">Relaja y Duerme</string>
+    <string name="notification_action_play">Reproducir</string>
+    <string name="notification_action_pause">Pausar</string>
+    <string name="notification_action_next">Siguiente</string>
+    <string name="notification_action_previous">Anterior</string>
+</resources>
