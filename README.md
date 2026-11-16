@@ -1,105 +1,127 @@
-# 🌙 Relaxa e Dorme (Edição Pública / Comunitária)
+<div align="center">
 
-**Relaxa e Dorme** é um aplicativo Android de música ambiente, sons da natureza e relaxamento, desenvolvido em **Kotlin** e **Jetpack Compose**, com reprodução em segundo plano via **AndroidX Media3 (ExoPlayer + MediaSessionService)**.
+<br />
 
-Esta é a **edição pública de código aberto** do projeto, licenciada sob **GNU General Public License v3.0 (`GPL-3.0-only`)**.
+<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" alt="Relaxa e Dorme" width="112" height="112" />
 
----
+# Relaxa e Dorme
 
-## 📦 O que está neste repositório vs. o que foi separado
+### *Seu refúgio de tranquilidade.*
 
-Para respeitar o licenciamento e a procedência de arquivos de mídia e ilustrações, este repositório público contém **exclusivamente o código-fonte, testes unitários, recursos vetoriais de interface e placeholders neutros**:
+Um espaço sereno para desacelerar a mente, ouvir músicas relaxantes e combinar sons da natureza antes de dormir — sem anúncios, sem distrações e no seu próprio ritmo.
 
-- **Incluído:**
-  - Todo o código-fonte Kotlin (UI em Compose/Material 3, Player, Mixer, Repositórios, Cache, DataStore, Media3).
-  - Suíte completa de testes unitários (`62` testes).
-  - Ícones vetoriais XML de interface e suporte multilíngue (**Português BR**, **Inglês** e **Espanhol**).
-  - Placeholders neutros para ícone de launcher e splash screen.
-- **Excluído (mantido fora do repositório público):**
-  - Ilustrações proprietárias da mascote **Ghosty** (`assets/ghosty/`, launcher e splash oficiais).
-  - Os 18 sons ambientes (`assets/sounds/`).
-  - As 4 músicas demo locais (`assets/demo_music/`).
-  - Capas proprietárias (`assets/covers/`) e o arquivo `catalog.json` oficial.
-  - A URL de produção do Cloudflare R2, credenciais e chaves de assinatura.
+<br />
 
-### Como o aplicativo se comporta sem os assets privados?
+[![Android](https://img.shields.io/badge/Android-8.0%2B-8EB0D6?style=flat-square&labelColor=111623&logo=android&logoColor=E4EAF8)](#download)
+[![Kotlin](https://img.shields.io/badge/Kotlin-A3B8FF?style=flat-square&labelColor=111623&logo=kotlin&logoColor=E4EAF8)](#tecnologias)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-8CE0D2?style=flat-square&labelColor=111623&logo=jetpackcompose&logoColor=E4EAF8)](#tecnologias)
+[![Licença GPL-3.0](https://img.shields.io/badge/Licen%C3%A7a-GPL--3.0-E5D2A6?style=flat-square&labelColor=111623)](LICENSE)
 
-O código foi projetado para funcionar de forma independente e sem crashes mesmo sem nenhum asset proprietário ou URL remota configurada:
+<br />
 
-- **Ghosty:** exibe um fallback vetorial seguro quando os PNGs não estão presentes.
-- **Sons Ambientes:** verifica a existência física de cada `.ogg` e apresenta um estado vazio amigável quando não há arquivos locais.
-- **Músicas / Capas:** inicializa sem erros com `BuildConfig.R2_BASE_PUBLIC_URL` vazio (`""`), exibindo estado vazio informativo e fallback visual para capas ausentes.
-- **Mixer:** continua acessível e operacional.
+<a id="download"></a>
+<a href="https://github.com/MatheusTaaz/Relaxa-Dorme/releases/latest">
+  <img src="https://img.shields.io/badge/%E2%AC%87%20%20Baixar%20para%20Android-223366?style=for-the-badge&logo=android&logoColor=E4EAF8" alt="Baixar para Android" height="44" />
+</a>
 
----
+<sub>Disponível gratuitamente em APK assinado nas <a href="https://github.com/MatheusTaaz/Relaxa-Dorme/releases/latest">Releases oficiais do GitHub</a>.</sub>
 
-## ✨ Funcionalidades Principais
+<br />
+<br />
 
-- **Biblioteca Musical por Álbuns:** catálogo JSON remoto configurável, streaming, download para reprodução offline, favoritos, histórico, mini player e player expandido.
-- **Sons Ambientes e Mixer:** suporte a até 8 camadas simultâneas em loop contínuo, com controle independente de volume por som e cenas salvas.
-- **Recursos de Descanso:** timer de desligamento automático com fade-out gradual e reprodução contínua em segundo plano.
-- **Privacidade:** sem cadastro, sem anúncios e sem rastreamento; preferências e histórico armazenados localmente via DataStore.
-- **Idiomas:** Português (BR), Inglês e Espanhol.
+</div>
 
 ---
 
-## 🛠️ Arquitetura e Tecnologias
+## Capturas de Tela
 
-| Tecnologia | Utilização |
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="docs/screenshots/01-home.png" alt="Tela Inicial — Home" width="200" /><br />
+      <sub><b>Home</b><br />Saudação noturna e acesso rápido</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/screenshots/02-music-player.png" alt="Player Musical" width="200" /><br />
+      <sub><b>Player Musical</b><br />Álbuns autorais e modo offline</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/screenshots/03-ambient-mixer.png" alt="Mixer de Sons Ambientes" width="200" /><br />
+      <sub><b>Mixer de Sons</b><br />Camadas sonoras independentes</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/screenshots/04-ghosty-buddy.png" alt="Ghosty Buddy" width="200" /><br />
+      <sub><b>Ghosty Buddy</b><br />Companheira interativa de descanso</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+## Experiência e Funcionalidades
+
+Projetado com uma paleta noturna de baixa emissão de luz (`#090C15`), o **Relaxa e Dorme** reúne música ambiente e paisagens sonoras personalizáveis em uma interface calma e silenciosa.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🎵 Música Relaxante &amp; Segundo Plano</h4>
+      <p>Ouça álbuns instrumentais e faixas suaves por streaming ou baixe seus álbuns preferidos para reprodução totalmente offline, com suporte contínuo em segundo plano e controles na tela de bloqueio.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🌧️ Sons Ambientes &amp; Mixer de Áudio</h4>
+      <p>Combine chuva, correnteza de rio, vento na floresta, lareira e ruídos suaves. Misture múltiplos sons ambientes simultaneamente — sozinhos ou acompanhando uma música — com volume individual por camada.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🌙 Temporizador com Fade-out &amp; Ghosty Buddy</h4>
+      <p>Programe o desligamento automático com redução gradual de volume (<i>fade-out</i>) para não interromper o sono brusca­mente, acompanhado pelas reações visuais tranquilas da mascote <b>Ghosty Buddy</b>.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🤍 Favoritos &amp; Estatísticas Locais</h4>
+      <p>Salve suas faixas favoritas, crie cenas sonoras personalizadas e acompanhe seu tempo de tranquilidade com estatísticas de audição armazenadas exclusivamente no seu dispositivo.</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+<a id="tecnologias"></a>
+
+## Tecnologias
+
+Construído de forma nativa para Android com foco em leveza, privacidade e reprodução de áudio confiável:
+
+<div align="center">
+
+| Tecnologia | Papel no Aplicativo |
 | :--- | :--- |
-| **Kotlin** (`2.2.10`) | Linguagem principal |
-| **Jetpack Compose + Material 3** | Interface declarativa |
-| **AndroidX Navigation Compose** | Navegação entre telas |
-| **AndroidX Media3 (ExoPlayer / MediaSession)** (`1.11.1`) | Reprodução local/remota e em segundo plano |
-| **DataStore Preferences** (`1.1.3`) | Persistência local de preferências e histórico |
-| **Kotlinx Serialization** (`1.8.0`) | Parse do catálogo JSON |
-| **AGP** (`9.3.3`) | Build Android (`minSdk 26` / `targetSdk 37`) |
+| **Kotlin** | Linguagem principal e arquitetura reativa com Coroutines & Flow |
+| **Jetpack Compose** | Interface declarativa moderna, fluida e adaptada ao tema escuro |
+| **Material 3** | Sistema visual customizado com contrastes suaves para leitura noturna |
+| **AndroidX Media3** | Motor `ExoPlayer` e `MediaSessionService` para mixagem e segundo plano |
+| **Gradle** | Automação de build, verificação estática e empacotamento reprodutível |
+
+</div>
 
 ---
 
-## 🚀 Como Compilar e Testar
+## Licenciamento e Créditos
 
-### Pré-requisitos
-- Android Studio recente com **Android SDK** configurado (`API 26+` / `compileSdk 37`).
-- JDK 11 ou superior.
+O código-fonte deste repositório público é distribuído sob a licença **GNU General Public License v3.0 apenas (`GPL-3.0-only`)**.  
+Determinados recursos visuais, ilustrações e arquivos de áudio possuem origens e condições de licenciamento próprias — não sendo todos os assets de domínio público nem de propriedade exclusiva do autor.
 
-### Comandos (na raiz do projeto)
+<div align="center">
 
-```bash
-# Executar testes unitários
-./gradlew testDebugUnitTest
+[**LICENSE**](LICENSE) &nbsp;•&nbsp; [**NOTICE**](NOTICE) &nbsp;•&nbsp; [**AUDIO_LICENSES.md**](AUDIO_LICENSES.md) &nbsp;•&nbsp; [**LICENSE-ASSETS.md**](LICENSE-ASSETS.md) &nbsp;•&nbsp; [**CONTRIBUTING.md**](CONTRIBUTING.md)
 
-# Gerar APK debug (edição comunitária)
-./gradlew assembleDebug
+<br />
 
-# Executar análise estática (Lint)
-./gradlew lintDebug
-```
+<sub>Criado por <b>mTaaz</b> &nbsp;•&nbsp; Idiomas no app: Português (BR), English e Español.</sub>
 
-*(No Windows, utilize `.\gradlew.bat`.)*
-
-### Configuração Opcional de Catálogo Remoto (R2 / HTTP)
-
-Por padrão, `BuildConfig.R2_BASE_PUBLIC_URL` é compilado como string vazia (`""`). Caso deseje testar com um servidor/bucket próprio compatível, forneça a URL temporariamente sem gravá-la no código-fonte:
-
-```bash
-./gradlew assembleDebug -PR2_BASE_PUBLIC_URL=https://seu-endpoint.exemplo
-```
-
-Ou via variável de ambiente `R2_BASE_PUBLIC_URL`.
-
----
-
-## 📄 Licenciamento e Documentação Relacionada
-
-- [`LICENSE`](LICENSE) — Texto oficial completo da licença **GPL-3.0-only** (aplicável ao código-fonte).
-- [`NOTICE`](NOTICE) — Avisos de copyright, separação de assets e atribuições de bibliotecas de terceiros.
-- [`LICENSE-ASSETS.md`](LICENSE-ASSETS.md) — Situação detalhada de licenciamento, origem e pendências de cada categoria de asset.
-- [`AUDIO_LICENSES.md`](AUDIO_LICENSES.md) — Registro técnico dos 18 sons ambientes, 4 faixas demo e pendências de comprovação.
-- [`CONTRIBUTING.md`](CONTRIBUTING.md) — Regras de contribuição e verificações obrigatórias.
-
----
-
-## 🧑‍💻 Autoria
-
-Desenvolvido por **mTaaz** com apoio de ferramentas de inteligência artificial no processo de desenvolvimento, arquitetura e revisão.
+</div>

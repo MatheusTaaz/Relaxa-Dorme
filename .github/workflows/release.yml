@@ -97,7 +97,7 @@ jobs:
 
       - name: Build signed Release APK
         env:
-          R2_BASE_PUBLIC_URL: ${{ vars.R2_BASE_PUBLIC_URL }}
+          R2_BASE_PUBLIC_URL: ${{ vars.R2_BASE_PUBLIC_URL || secrets.R2_BASE_PUBLIC_URL }}
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
@@ -112,7 +112,8 @@ jobs:
             exit 1
           fi
           if [ -z "${R2_BASE_PUBLIC_URL}" ]; then
-            echo "::warning::GitHub variable R2_BASE_PUBLIC_URL is empty; building with empty R2 base URL."
+            echo "::error::R2_BASE_PUBLIC_URL is empty. Configure it in GitHub Actions Variables or Secrets before building an official Release."
+            exit 1
           fi
           ./gradlew assembleRelease --no-daemon
 
