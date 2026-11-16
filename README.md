@@ -2,7 +2,7 @@
 
 <br />
 
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" alt="Relaxa e Dorme" width="112" height="112" />
+<img src="docs/images/ghosty-logo.png" alt="Relaxa e Dorme — Ghosty" width="140" />
 
 # Relaxa e Dorme
 
@@ -40,19 +40,19 @@ Um espaço sereno para desacelerar a mente, ouvir músicas relaxantes e combinar
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="docs/screenshots/01-home.png" alt="Tela Inicial — Home" width="200" /><br />
+      <img src="docs/screenshots/01-home.jpg" alt="Tela Inicial — Home" width="200" /><br />
       <sub><b>Home</b><br />Saudação noturna e acesso rápido</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/screenshots/02-music-player.png" alt="Player Musical" width="200" /><br />
+      <img src="docs/screenshots/02-music-player.jpg" alt="Player Musical" width="200" /><br />
       <sub><b>Player Musical</b><br />Álbuns autorais e modo offline</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/screenshots/03-ambient-mixer.png" alt="Mixer de Sons Ambientes" width="200" /><br />
+      <img src="docs/screenshots/03-ambient-mixer.jpg" alt="Mixer de Sons Ambientes" width="200" /><br />
       <sub><b>Mixer de Sons</b><br />Camadas sonoras independentes</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/screenshots/04-ghosty-buddy.png" alt="Ghosty Buddy" width="200" /><br />
+      <img src="docs/screenshots/04-ghosty-buddy.jpg" alt="Ghosty Buddy" width="200" /><br />
       <sub><b>Ghosty Buddy</b><br />Companheira interativa de descanso</sub>
     </td>
   </tr>
