@@ -35,8 +35,32 @@ android {
         }
     }
 
+    val keystorePath = System.getenv("ANDROID_KEYSTORE_FILE")?.trim().orEmpty()
+    val keystorePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")?.trim().orEmpty()
+    val keyAliasName = System.getenv("ANDROID_KEY_ALIAS")?.trim().orEmpty()
+    val keyPasswordValue = System.getenv("ANDROID_KEY_PASSWORD")?.trim().orEmpty()
+    val hasReleaseSigning = keystorePath.isNotEmpty() &&
+        keystorePassword.isNotEmpty() &&
+        keyAliasName.isNotEmpty() &&
+        keyPasswordValue.isNotEmpty() &&
+        file(keystorePath).isFile
+
+    signingConfigs {
+        if (hasReleaseSigning) {
+            create("release") {
+                storeFile = file(keystorePath)
+                storePassword = keystorePassword
+                keyAlias = keyAliasName
+                keyPassword = keyPasswordValue
+            }
+        }
+    }
+
     buildTypes {
         release {
+            if (hasReleaseSigning) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             optimization {
                 enable = false
             }
