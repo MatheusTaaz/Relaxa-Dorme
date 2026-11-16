@@ -4,12 +4,14 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
 
 permissions: {}
 
 jobs:
   release:
     name: Build, Sign & Publish Official APK
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -129,22 +131,40 @@ jobs:
           test -x "${APKSIGNER}"
           "${APKSIGNER}" verify --verbose --print-certs "${APK_SOURCE}"
 
-          TAG_NAME="${GITHUB_REF_NAME}"
-          RELEASE_APK="Relaxa-e-Dorme-${TAG_NAME}.apk"
+          if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
+            RELEASE_APK="Relaxa-e-Dorme-test-${GITHUB_RUN_NUMBER}.apk"
+          else
+            RELEASE_APK="Relaxa-e-Dorme-${GITHUB_REF_NAME}.apk"
+          fi
           RELEASE_SHA="${RELEASE_APK}.sha256"
 
           cp "${APK_SOURCE}" "${RELEASE_APK}"
           sha256sum "${RELEASE_APK}" > "${RELEASE_SHA}"
           cat "${RELEASE_SHA}"
 
+          {
+            echo "RELEASE_APK=${RELEASE_APK}"
+            echo "RELEASE_SHA=${RELEASE_SHA}"
+          } >> "${GITHUB_ENV}"
+
+      - name: Upload temporary APK and checksum artifacts
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: official-apk-test-${{ github.run_number }}
+          path: |
+            ${{ env.RELEASE_APK }}
+            ${{ env.RELEASE_SHA }}
+          retention-days: 7
+          if-no-files-found: error
+
       - name: Create GitHub Release
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           TAG_NAME="${GITHUB_REF_NAME}"
-          RELEASE_APK="Relaxa-e-Dorme-${TAG_NAME}.apk"
-          RELEASE_SHA="${RELEASE_APK}.sha256"
 
           if gh release view "${TAG_NAME}" >/dev/null 2>&1; then
             gh release upload "${TAG_NAME}" "${RELEASE_APK}" "${RELEASE_SHA}" --clobber
@@ -159,4 +179,5 @@ jobs:
         if: always()
         run: |
           rm -f "${RUNNER_TEMP}/release-signing.jks"
+          rm -f "${RELEASE_APK:-}" "${RELEASE_SHA:-}"
           rm -rf _private_assets
