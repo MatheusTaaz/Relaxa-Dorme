@@ -2,7 +2,7 @@
 
 <br />
 
-<img src="docs/images/ghosty-logo.png" alt="Relaxa e Dorme — Ghosty" width="140" />
+<img src="docs/images/ghosty-logo.png" alt="Relaxa e Dorme — Ghosty" width="200" />
 
 # Relaxa e Dorme
 
